@@ -1,0 +1,14 @@
+C:\workspace\csharp\screensound\screensound\bin\Debug\net8.0\screensound.exe
+C:\workspace\csharp\screensound\screensound\bin\Debug\net8.0\screensound.deps.json
+C:\workspace\csharp\screensound\screensound\bin\Debug\net8.0\screensound.runtimeconfig.json
+C:\workspace\csharp\screensound\screensound\bin\Debug\net8.0\screensound.dll
+C:\workspace\csharp\screensound\screensound\bin\Debug\net8.0\screensound.pdb
+C:\workspace\csharp\screensound\screensound\obj\Debug\net8.0\screensound.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\csharp\screensound\screensound\obj\Debug\net8.0\screensound.AssemblyInfoInputs.cache
+C:\workspace\csharp\screensound\screensound\obj\Debug\net8.0\screensound.AssemblyInfo.cs
+C:\workspace\csharp\screensound\screensound\obj\Debug\net8.0\screensound.csproj.CoreCompileInputs.cache
+C:\workspace\csharp\screensound\screensound\obj\Debug\net8.0\screensound.dll
+C:\workspace\csharp\screensound\screensound\obj\Debug\net8.0\refint\screensound.dll
+C:\workspace\csharp\screensound\screensound\obj\Debug\net8.0\screensound.pdb
+C:\workspace\csharp\screensound\screensound\obj\Debug\net8.0\screensound.genruntimeconfig.cache
+C:\workspace\csharp\screensound\screensound\obj\Debug\net8.0\ref\screensound.dll
