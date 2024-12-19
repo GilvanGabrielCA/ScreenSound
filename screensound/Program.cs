@@ -6,16 +6,15 @@ Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<in
 
 bandasRegistradas.Add("Linkin Park", new List<int>() { 10, 8, 6});
 bandasRegistradas.Add("The Beatles", new List<int>());
-
 void ExibirLogo()
 {
     Console.WriteLine(@"
-        ░██████╗░█████╗░██████╗░███████╗███████╗███╗░░██╗  ░██████╗░█████╗░██╗░░░██╗███╗░░██╗██████╗░
-        ██╔════╝██╔══██╗██╔══██╗██╔════╝██╔════╝████╗░██║  ██╔════╝██╔══██╗██║░░░██║████╗░██║██╔══██╗
-        ╚█████╗░██║░░╚═╝██████╔╝█████╗░░█████╗░░██╔██╗██║  ╚█████╗░██║░░██║██║░░░██║██╔██╗██║██║░░██║
-        ░╚═══██╗██║░░██╗██╔══██╗██╔══╝░░██╔══╝░░██║╚████║  ░╚═══██╗██║░░██║██║░░░██║██║╚████║██║░░██║
-        ██████╔╝╚█████╔╝██║░░██║███████╗███████╗██║░╚███║  ██████╔╝╚█████╔╝╚██████╔╝██║░╚███║██████╔╝
-        ╚═════╝░░╚════╝░╚═╝░░╚═╝╚══════╝╚══════╝╚═╝░░╚══╝  ╚═════╝░░╚════╝░░╚═════╝░╚═╝░░╚══╝╚═════╝░
+         ██████╗ █████╗ ██████╗ ███████╗███████╗███╗  ██╗   ██████╗ █████╗ ██╗   ██╗███╗  ██╗██████╗
+        ██╔════╝██╔══██╗██╔══██╗██╔════╝██╔════╝████╗ ██║  ██╔════╝██╔══██╗██║   ██║████╗ ██║██╔══██╗
+        ╚█████╗ ██║  ╚═╝██████╔╝█████╗  █████╗  ██╔██╗██║  ╚█████╗ ██║  ██║██║   ██║██╔██╗██║██║  ██║
+         ╚═══██╗██║  ██╗██╔══██╗██╔══╝  ██╔══╝  ██║╚████║   ╚═══██╗██║  ██║██║   ██║██║╚████║██║  ██║
+        ██████╔╝╚█████╔╝██║  ██║███████╗███████╗██║ ╚███║  ██████╔╝╚█████╔╝╚██████╔╝██║ ╚███║██████╔╝
+        ╚═════╝  ╚════╝ ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚══╝  ╚═════╝  ╚════╝  ╚═════╝ ╚═╝  ╚══╝╚═════╝
     ");
      
     Console.WriteLine(mensagemBoasVindas);
@@ -41,7 +40,7 @@ void ExibirOpcoesDoMenu()
             break;
         case 3: AvaliarUmaBanda();
             break;
-        case 4: Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
+        case 4: ExibirMedia();
             break;
         case -1: Console.WriteLine("Tchau Tchau :)");
             break;
@@ -126,6 +125,40 @@ void AvaliarUmaBanda()
     }
 }
 
+void ExibirMedia()
+{
+    Console.Clear();
+
+    ExibirTituloDaOpcao("Exibir Media da Banda");
+
+    Console.Write("Digite o nome da banda que deseja avaliar: ");
+    string nomeDaBanda = Console.ReadLine()!;
+
+    if (bandasRegistradas.ContainsKey(nomeDaBanda))
+    {
+        List<int> notas = bandasRegistradas [nomeDaBanda];
+
+        if (notas.Count > 0)
+        {
+            double media = notas.Average();
+            Console.WriteLine($"\nA média da banda {nomeDaBanda} é {media:F2}");
+        } else
+        {
+            Console.WriteLine($"\nA banda {nomeDaBanda} ainda não possui notas registradas!");
+        }
+    } else
+    {
+        Console.WriteLine($"\nA banda {nomeDaBanda} não foi encontrada!");
+    }
+
+    Console.WriteLine("\nDigite uma tecla para voltar ao menu principal");
+
+    Console.ReadKey();
+    Console.Clear();
+
+    ExibirOpcoesDoMenu();
+
+}
 void ExibirTituloDaOpcao(string titulo)
 {
     int quantidadeDeLetras = titulo.Length;

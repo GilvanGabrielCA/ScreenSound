@@ -12,3 +12,4 @@ C:\workspace\csharp\screensound\screensound\obj\Debug\net8.0\refint\screensound.
 C:\workspace\csharp\screensound\screensound\obj\Debug\net8.0\screensound.pdb
 C:\workspace\csharp\screensound\screensound\obj\Debug\net8.0\screensound.genruntimeconfig.cache
 C:\workspace\csharp\screensound\screensound\obj\Debug\net8.0\ref\screensound.dll
+C:\workspace\csharp\screensound\screensound\obj\Debug\net8.0\screensound.sourcelink.json
